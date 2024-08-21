@@ -286,7 +286,6 @@
 					x-init="tryHelpFor('welcome');"
 					x-for="(v) in helpContents"
 					@help.window="addHelpContents($event.detail.v);">
-					<!-- <p  x-html="v[0]" :class="v[1]" /> -->
 					<p x-html="v[0]" :class="v[1] == 'old' ? 'help-text old' : 'help-text new'" />
 
 				</template>
